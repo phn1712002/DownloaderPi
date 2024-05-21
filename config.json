@@ -1,8 +1,9 @@
 {
-  "src_path": "Working:/_Cloud/DownloaderPi",
+  "src_path": "Working:/_Cloud/Downloader",
   "dest_path": "./USB",
   "time_sleep": 60,
 
-  "api_key": "7104471012:AAF5vxKFhjiA9tOuMZkS9UzTmsGBAY4DEI4",
-    "chat_id": "-1002091538846"
+  "sender": "",
+  "recipients": "",
+  "password" : "llrm joel qylp heti"
 }

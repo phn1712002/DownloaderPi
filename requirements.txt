@@ -1,3 +1,2 @@
 rclone-python
 pyclean
-python-telegram-bot
