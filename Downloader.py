@@ -19,7 +19,7 @@ def main():
         os.system('clear')
         break
       except:
-        pass
+        time.sleep(config['time_sleep'])
 
 
 def get_datetime():

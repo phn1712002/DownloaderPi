@@ -1,5 +1,5 @@
 {
-  "src_path": "Working:/_Cloud/Downloader",
+  "src_path": "Working:/_Cloud/DownloaderPi",
   "dest_path": "./USB",
   "time_sleep": 60,
 
