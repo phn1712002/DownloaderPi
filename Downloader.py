@@ -18,8 +18,8 @@ def main():
       except KeyboardInterrupt:
         os.system('clear')
         break
-      finally:
-        continue
+      except:
+        pass
 
 
 def get_datetime():
