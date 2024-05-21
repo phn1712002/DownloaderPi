@@ -15,8 +15,11 @@ def main():
         text_send_telegram = f"DownloaderPi synchronization successful at {get_datetime()}"
         asyncio.run(send_mail(bot, config, text_send_telegram))
         time.sleep(config['time_sleep'])
-      except: 
-        pass    
+      except KeyboardInterrupt:
+        os.system('clear')
+        break
+      finally:
+        continue
 
 
 def get_datetime():
