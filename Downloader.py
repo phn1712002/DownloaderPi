@@ -9,12 +9,14 @@ def main():
     bot = telegram.Bot(token=config['api_key'])
     
     while True:
-      os.system('clear')
-      rclone.sync(config['src_path'], config['dest_path'])
-      text_send_telegram = f"DownloaderPi synchronization successful at {get_datetime()}"
-      asyncio.run(send_mail(bot, config, text_send_telegram))
-      time.sleep(config['time_sleep'])
-     
+      try:
+        os.system('clear')
+        rclone.sync(config['src_path'], config['dest_path'])
+        text_send_telegram = f"DownloaderPi synchronization successful at {get_datetime()}"
+        asyncio.run(send_mail(bot, config, text_send_telegram))
+        time.sleep(config['time_sleep'])
+      except: 
+        pass    
 
 
 def get_datetime():
